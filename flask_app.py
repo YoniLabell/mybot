@@ -52,7 +52,7 @@ def telegram_webhook():
                 except:
                     bot.sendMessage(chat_id, "From the web: sorry, I didn't understand that kind of message")
 
-            else:
+            elif text[0]=="@":
 
                 try:
                     r=requests.get(text)
